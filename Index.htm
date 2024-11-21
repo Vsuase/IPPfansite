@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>The Minions</title>
+    <link rel="stylesheet" href="ICSS/index.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/DespicableMeclip.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <embed name="DespicableMeaudio" src="video/DespicableMeaudio.mp3" loop="true" hidden="true" autostart="true">
+
+    <audio controls autoplay>
+        <source src="video/DespicableMeaudio.mp3" type="audio/ogg">
+        <source src="video/DespicableMeaudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <section class="main">
+
+        <div class="wrap">
+            <div class="content">
+                <p>Minions</p>
+                <a href="Minion.htm" target="_blank"><img src="imgindex/Minions.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="content">
+                <p>Movies</p>
+                <a href="Movies.htm" target="_blank"><img src="imgindex/Movies.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="JavaScript/app.js"></script>
+
+    <div class="content">
+        <h1>Are you a Minions fans?</h1>
+        <p>Be a fan of the Despicable Me movies and the Minions, embracing the fun, chaos, and heart that come with
+            these lovable, mischievous characters.<br>
+            The Minions, with their silly antics and unique language, bring humor and charm to every scene, while the
+            films themselves blend adventure, humor, and a touch of sweetness. </p>
+    </div>
+
+
+    <div class="dv3">
+        <h1 class="hea">The Despicable Me</h1>
+    </div>
+
+
+    <div class="row">
+        <div class="column" style="background-color:#000000;">
+            <h2>The beginning</h2>
+            <div class="dv1">
+                In a cheerful suburban neighborhood, surrounded by white picket fences and blooming rose bushes, there
+                stands a black house with a lifeless lawn.
+                Unnoticed by the neighbors, beneath this home lies a vast secret lair. Guarded by a small army of
+                minions, we find Gru, plotting the most ambitious heist the world has ever seen: stealing the moon.
+            </div>
+        </div>
+
+
+        <div class="column" style="background-color:#000000;">
+            <div class="dv2">
+                Equipped with shrink rays, freeze rays, and an array of battle-ready vehicles for both land and air, he
+                defeats anyone who dares to challenge him.
+                That is, until he encounters the unyielding spirit of three orphaned girls who, unlike anyone else, see
+                something in him: the possibility of a father. The world's greatest villain is about to face his
+                toughest challenge yet—three little girls named Margo, Edith, and Agnes.
+            </div>
+        </div>
+    </div>
+
+
+
+    <button type="button" class="collapsible">Hidden Minions</button>
+    <div class="content1">
+        <p>Behold! A mischievous trio, transformed into tiny, rambunctious minions, have mysteriously appeared! <br>But
+            who are they? Where did they spring from?
+            And, the most pressing question of all—will they dare to steal the moon itself?</p>
+
+
+
+        <div class="row">
+            <div class="column" style="background-color:#000000;">
+                <h2>What is that card?</h2>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h1>Hidden</h1>
+                            <p>Hover Over</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="minionhidden/20241120_143724.png" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column" style="background-color:#000000;">
+                    <h2>What is that card?</h2>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h1>Hidden</h1>
+                                <p>Hover Over</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="minionhidden/20241120_143731.jpg" alt="Avatar"
+                                    style="width:300px;height:300px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.htm" target="_blank">Home</a></li>
+                    <li><a href="Minion.htm" target="_blank">Minions</a></li>
+                    <li><a href="Movies.htm" target="_blank">Movies</a></li>
+                    <li><a href="Trivia.html" target="_blank">Trivia</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+</body>
+
+</html>
